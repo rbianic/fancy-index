@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family:  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  color: #fdf6e3;
+}
+
+html {
+  background:#253438
+}
+table {
+  width: 100%;
+  background: #253438;
+  border: 0;
+  table-layout: auto;
+}
+
+table thead {
+  background: #456067;
+}
+
+table tr th,
+table tr td {
+  padding: 0.5625rem 0.625rem;
+  font-size: 0.875rem;
+  color: #93a1a1;
+  text-align: left;
+  line-height: 1.125rem;
+}
+
+table thead tr th {
+  padding: 0.5rem 0.625rem 0.625rem;
+  font-weight: bold;
+}
+
+table tr.even {
+  background: #456067;
+}
+
+a {
+  text-decoration: none;
+  color: #fdf6e3;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #eee8d5;
+}
+
+.img-wrap {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.img-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+}
+
+.img-wrap + a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hidden {
+  display: none;
+}
+
+#page-header {
+  display: flex;
+  align-items: center;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+#search {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #464a4c;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  margin-left: 1rem;
+  -webkit-appearance: textfield;
+}
+
+#search:focus {
+  border-color: #cecece;
+  outline: 0;
+}
+
+/* Hide extra columns so they don't squash file names */
+@media (max-width: 600px) {
+  .indexcollastmod, .indexcoldesc, .indexcolsize {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1em
+  }
+
+  #search {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.375em;
+  }
+}
