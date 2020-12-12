@@ -102,7 +102,7 @@ a:visited {
   outline: 0;
 }
 
-/* Hide extra columns so they don't squash file names */
+/* Hide extr columns so they don't squash file names */
 @media (max-width: 600px) {
   .indexcollastmod, .indexcoldesc, .indexcolsize {
     display: none;
